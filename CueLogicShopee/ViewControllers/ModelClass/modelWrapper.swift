@@ -13,6 +13,10 @@ import UIKit
     optional func didReciveError(error:NSError)
 }
 
+@objc protocol modelWrapperImageDownloadDelegate{
+    optional func didImageDownloadSucessFully(indexPath: NSIndexPath)
+}
+
 
 class modelWrapper: NSObject {
     
@@ -22,8 +26,10 @@ class modelWrapper: NSObject {
     private var jsonParserObj = jsonParser()
     private var internetCheckerObj = internetChecker()
     private var productDataDownloaderObj = productDataDownloader()
+    private let pendingOperations = PendingOperations()
     
     var dataDownloadDelegate:modelWrapperDataDownloaderDelegate?
+    var imageDownloadDelegate:modelWrapperImageDownloadDelegate?
     
     
     // MARK: jsonParserFunction
@@ -43,7 +49,32 @@ class modelWrapper: NSObject {
         productDataDownloaderObj.fetchProductList(requestedURL)
     }
     
+    //MARK: Image downloader
+    
+    func modelWrapper_startImageDownloadForProduct(productDetails:productData, indexPath: NSIndexPath){
+        
+        if pendingOperations.downloadsInProgress[indexPath] != nil {
+            return
+        }
+        
+        let downloader = ImageDownloader(productInfo: productDetails)
+        downloader.completionBlock = {
+            if downloader.cancelled {
+                return
+            }
+            dispatch_async(dispatch_get_main_queue(), {
+                self.pendingOperations.downloadsInProgress.removeValueForKey(indexPath)
+                self.imageDownloadDelegate?.didImageDownloadSucessFully!(indexPath)
+            })
+        }
+        
+        pendingOperations.downloadsInProgress[indexPath] = downloader
+        pendingOperations.downloadQueue.addOperation(downloader)
+    }
+    
 }
+    
+
 
 extension modelWrapper:dataDownloadStatus{
 

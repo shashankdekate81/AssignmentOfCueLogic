@@ -15,10 +15,12 @@ class productViewController: UIViewController {
     
     var arrProductInfo:[productData] = []
     var intialViewController:intialScreen?
-    let pendingOperations = PendingOperations()
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        modelWrapper.sharedInstance.imageDownloadDelegate = self
         
         self.productCollectionView.backgroundColor = UIColor.whiteColor()
         
@@ -69,30 +71,7 @@ class productViewController: UIViewController {
             arrProductInfo[sender.tag].productAddtoCartCount += 1
             
         }
-    
     }
-    
-    func startImageDownloadForProduct(productDetails:productData, indexPath: NSIndexPath){
-        
-        if pendingOperations.downloadsInProgress[indexPath] != nil {
-            return
-        }
-        
-        let downloader = ImageDownloader(productInfo: productDetails)
-        downloader.completionBlock = {
-            if downloader.cancelled {
-                return
-            }
-            dispatch_async(dispatch_get_main_queue(), {
-                self.pendingOperations.downloadsInProgress.removeValueForKey(indexPath)
-                self.productCollectionView.reloadItemsAtIndexPaths([indexPath])
-            })
-        }
-        
-        pendingOperations.downloadsInProgress[indexPath] = downloader
-        pendingOperations.downloadQueue.addOperation(downloader)
-    }
-    
 }
 
 extension productViewController:UICollectionViewDataSource{
@@ -118,7 +97,7 @@ extension productViewController:UICollectionViewDataSource{
         
         switch arrProductInfo[indexPath.item].prodctImageDownloadState {
         case .New:
-            startImageDownloadForProduct(arrProductInfo[indexPath.item], indexPath: indexPath)
+            modelWrapper.sharedInstance.modelWrapper_startImageDownloadForProduct(arrProductInfo[indexPath.item], indexPath: indexPath)
         case .Downloaded:
             print("Donot Download")
         default:
@@ -137,9 +116,13 @@ extension productViewController:UICollectionViewDelegateFlowLayout{
     {
         return CGSizeMake((UIScreen.mainScreen().bounds.width - 30)/2,307);
     }
+}
 
+extension productViewController:modelWrapperImageDownloadDelegate{
     
-    
+    func didImageDownloadSucessFully(indexPath: NSIndexPath){
+        self.productCollectionView.reloadItemsAtIndexPaths([indexPath])
+    }
 
 }
 
