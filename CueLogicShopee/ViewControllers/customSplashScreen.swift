@@ -99,6 +99,8 @@ extension customSplashScreen:modelWrapperDataDownloaderDelegate{
         alertController.addAction(cancelAction)
         
         // add alert View Controller
+        
+        
     
     }
 
