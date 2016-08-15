@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA09B7A81D61842900E43558 /* imageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09B7A71D61842900E43558 /* imageDownloader.swift */; };
+		EA09B7AA1D61CFDD00E43558 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA09B7A91D61CFDD00E43558 /* SystemConfiguration.framework */; };
+		EA09B7AC1D61D26700E43558 /* internetChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09B7AB1D61D26600E43558 /* internetChecker.swift */; };
+		EA09B7AE1D61D9A700E43558 /* productDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09B7AD1D61D9A700E43558 /* productDataDownloader.swift */; };
+		EA09B7B11D61EBE900E43558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA09B7B01D61EBE900E43558 /* Main.storyboard */; };
+		EA09B7B41D61EC0300E43558 /* customSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09B7B21D61EC0300E43558 /* customSplashScreen.swift */; };
+		EA09B7B51D61EC0300E43558 /* intialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09B7B31D61EC0300E43558 /* intialScreen.swift */; };
+		EA09B7B81D61EC8900E43558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09B7B71D61EC8900E43558 /* AppDelegate.swift */; };
+		EA25D6391D5F2604000342D3 /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25D6381D5F2604000342D3 /* jsonParser.swift */; };
+		EA25D63B1D5F2663000342D3 /* modelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25D63A1D5F2663000342D3 /* modelWrapper.swift */; };
+		EA2713FD1D5EC1EA001B08B4 /* CueLogicShopeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2713FC1D5EC1EA001B08B4 /* CueLogicShopeeTests.swift */; };
+		EA2714081D5EC1EA001B08B4 /* CueLogicShopeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2714071D5EC1EA001B08B4 /* CueLogicShopeeUITests.swift */; };
+		EA2714241D5EC332001B08B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2714191D5EC332001B08B4 /* Assets.xcassets */; };
+		EA2714271D5EC332001B08B4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA27141F1D5EC332001B08B4 /* Info.plist */; };
+		EA27142F1D5EED60001B08B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA27142D1D5EED60001B08B4 /* LaunchScreen.storyboard */; };
+		EA2714321D5EF496001B08B4 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2714311D5EF496001B08B4 /* constant.swift */; };
+		EA88133A1D60AC8700B42FBF /* productViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8813361D60AC8700B42FBF /* productViewController.swift */; };
+		EA88133B1D60AC8700B42FBF /* productDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8813391D60AC8700B42FBF /* productDetailViewCell.swift */; };
+		EA88133D1D60CC9100B42FBF /* cartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88133C1D60CC9100B42FBF /* cartViewController.swift */; };
+		EA88133F1D60CEE300B42FBF /* cartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA88133E1D60CEE300B42FBF /* cartTableViewCell.swift */; };
+		EAFA3CF11D5F032900008A06 /* productData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA3CF01D5F032900008A06 /* productData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA2713F91D5EC1EA001B08B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2713DC1D5EC1E9001B08B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2713E31D5EC1E9001B08B4;
+			remoteInfo = CueLogicShopee;
+		};
+		EA2714041D5EC1EA001B08B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2713DC1D5EC1E9001B08B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2713E31D5EC1E9001B08B4;
+			remoteInfo = CueLogicShopee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA09B7A71D61842900E43558 /* imageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageDownloader.swift; sourceTree = "<group>"; };
+		EA09B7A91D61CFDD00E43558 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EA09B7AB1D61D26600E43558 /* internetChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = internetChecker.swift; sourceTree = "<group>"; };
+		EA09B7AD1D61D9A700E43558 /* productDataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productDataDownloader.swift; sourceTree = "<group>"; };
+		EA09B7B01D61EBE900E43558 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EA09B7B21D61EC0300E43558 /* customSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customSplashScreen.swift; sourceTree = "<group>"; };
+		EA09B7B31D61EC0300E43558 /* intialScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = intialScreen.swift; sourceTree = "<group>"; };
+		EA09B7B71D61EC8900E43558 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA25D6381D5F2604000342D3 /* jsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
+		EA25D63A1D5F2663000342D3 /* modelWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modelWrapper.swift; sourceTree = "<group>"; };
+		EA2713E41D5EC1EA001B08B4 /* CueLogicShopee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueLogicShopee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2713F81D5EC1EA001B08B4 /* CueLogicShopeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CueLogicShopeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2713FC1D5EC1EA001B08B4 /* CueLogicShopeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CueLogicShopeeTests.swift; sourceTree = "<group>"; };
+		EA2713FE1D5EC1EA001B08B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2714031D5EC1EA001B08B4 /* CueLogicShopeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CueLogicShopeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2714071D5EC1EA001B08B4 /* CueLogicShopeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CueLogicShopeeUITests.swift; sourceTree = "<group>"; };
+		EA2714091D5EC1EA001B08B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2714191D5EC332001B08B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA27141F1D5EC332001B08B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA27142E1D5EED60001B08B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA2714311D5EF496001B08B4 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
+		EA8813361D60AC8700B42FBF /* productViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productViewController.swift; sourceTree = "<group>"; };
+		EA8813391D60AC8700B42FBF /* productDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productDetailViewCell.swift; sourceTree = "<group>"; };
+		EA88133C1D60CC9100B42FBF /* cartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cartViewController.swift; sourceTree = "<group>"; };
+		EA88133E1D60CEE300B42FBF /* cartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cartTableViewCell.swift; sourceTree = "<group>"; };
+		EAFA3CF01D5F032900008A06 /* productData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA2713E11D5EC1E9001B08B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA09B7AA1D61CFDD00E43558 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2713F51D5EC1EA001B08B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2714001D5EC1EA001B08B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA09B7AF1D61EBE900E43558 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EA27142D1D5EED60001B08B4 /* LaunchScreen.storyboard */,
+				EA09B7B01D61EBE900E43558 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		EA09B7B61D61EC8900E43558 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EA09B7B71D61EC8900E43558 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EA09B7B91D61ECB400E43558 /* Framworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA09B7A91D61CFDD00E43558 /* SystemConfiguration.framework */,
+			);
+			name = Framworks;
+			sourceTree = "<group>";
+		};
+		EA09B7BA1D61ECCA00E43558 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EA2714191D5EC332001B08B4 /* Assets.xcassets */,
+				EA27141F1D5EC332001B08B4 /* Info.plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		EA2713DB1D5EC1E9001B08B4 = {
+			isa = PBXGroup;
+			children = (
+				EA2714171D5EC332001B08B4 /* CueLogicShopee */,
+				EA2713FB1D5EC1EA001B08B4 /* CueLogicShopeeTests */,
+				EA2714061D5EC1EA001B08B4 /* CueLogicShopeeUITests */,
+				EA2713E51D5EC1EA001B08B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA2713E51D5EC1EA001B08B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA2713E41D5EC1EA001B08B4 /* CueLogicShopee.app */,
+				EA2713F81D5EC1EA001B08B4 /* CueLogicShopeeTests.xctest */,
+				EA2714031D5EC1EA001B08B4 /* CueLogicShopeeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA2713FB1D5EC1EA001B08B4 /* CueLogicShopeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2713FC1D5EC1EA001B08B4 /* CueLogicShopeeTests.swift */,
+				EA2713FE1D5EC1EA001B08B4 /* Info.plist */,
+			);
+			path = CueLogicShopeeTests;
+			sourceTree = "<group>";
+		};
+		EA2714061D5EC1EA001B08B4 /* CueLogicShopeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2714071D5EC1EA001B08B4 /* CueLogicShopeeUITests.swift */,
+				EA2714091D5EC1EA001B08B4 /* Info.plist */,
+			);
+			path = CueLogicShopeeUITests;
+			sourceTree = "<group>";
+		};
+		EA2714171D5EC332001B08B4 /* CueLogicShopee */ = {
+			isa = PBXGroup;
+			children = (
+				EA09B7BA1D61ECCA00E43558 /* Resource */,
+				EA09B7B91D61ECB400E43558 /* Framworks */,
+				EA09B7B61D61EC8900E43558 /* Main */,
+				EA09B7AF1D61EBE900E43558 /* storyboards */,
+				EA88132F1D60AC8700B42FBF /* ViewControllers */,
+				EA2714351D5EFE47001B08B4 /* ModelClass */,
+				EA2714301D5EF47A001B08B4 /* Constant */,
+				EA2714201D5EC332001B08B4 /* NetworkCall */,
+				EA2714211D5EC332001B08B4 /* ParserCall */,
+			);
+			path = CueLogicShopee;
+			sourceTree = "<group>";
+		};
+		EA2714201D5EC332001B08B4 /* NetworkCall */ = {
+			isa = PBXGroup;
+			children = (
+				EA09B7A71D61842900E43558 /* imageDownloader.swift */,
+				EA09B7AB1D61D26600E43558 /* internetChecker.swift */,
+				EA09B7AD1D61D9A700E43558 /* productDataDownloader.swift */,
+			);
+			path = NetworkCall;
+			sourceTree = "<group>";
+		};
+		EA2714211D5EC332001B08B4 /* ParserCall */ = {
+			isa = PBXGroup;
+			children = (
+				EA25D6381D5F2604000342D3 /* jsonParser.swift */,
+			);
+			path = ParserCall;
+			sourceTree = "<group>";
+		};
+		EA2714301D5EF47A001B08B4 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				EA2714311D5EF496001B08B4 /* constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		EA2714351D5EFE47001B08B4 /* ModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				EAFA3CF01D5F032900008A06 /* productData.swift */,
+				EA25D63A1D5F2663000342D3 /* modelWrapper.swift */,
+			);
+			path = ModelClass;
+			sourceTree = "<group>";
+		};
+		EA88132F1D60AC8700B42FBF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA09B7B21D61EC0300E43558 /* customSplashScreen.swift */,
+				EA09B7B31D61EC0300E43558 /* intialScreen.swift */,
+				EA8813301D60AC8700B42FBF /* CartScreen */,
+				EA8813341D60AC8700B42FBF /* ProductScreen */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EA8813301D60AC8700B42FBF /* CartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EA8813311D60AC8700B42FBF /* Controller */,
+				EA8813321D60AC8700B42FBF /* Model */,
+				EA8813331D60AC8700B42FBF /* View */,
+			);
+			path = CartScreen;
+			sourceTree = "<group>";
+		};
+		EA8813311D60AC8700B42FBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA88133C1D60CC9100B42FBF /* cartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA8813321D60AC8700B42FBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA8813331D60AC8700B42FBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA88133E1D60CEE300B42FBF /* cartTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA8813341D60AC8700B42FBF /* ProductScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EA8813351D60AC8700B42FBF /* Controller */,
+				EA8813371D60AC8700B42FBF /* Model */,
+				EA8813381D60AC8700B42FBF /* View */,
+			);
+			path = ProductScreen;
+			sourceTree = "<group>";
+		};
+		EA8813351D60AC8700B42FBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA8813361D60AC8700B42FBF /* productViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA8813371D60AC8700B42FBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA8813381D60AC8700B42FBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA8813391D60AC8700B42FBF /* productDetailViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA2713E31D5EC1E9001B08B4 /* CueLogicShopee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA27140C1D5EC1EA001B08B4 /* Build configuration list for PBXNativeTarget "CueLogicShopee" */;
+			buildPhases = (
+				EA2713E01D5EC1E9001B08B4 /* Sources */,
+				EA2713E11D5EC1E9001B08B4 /* Frameworks */,
+				EA2713E21D5EC1E9001B08B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CueLogicShopee;
+			productName = CueLogicShopee;
+			productReference = EA2713E41D5EC1EA001B08B4 /* CueLogicShopee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA2713F71D5EC1EA001B08B4 /* CueLogicShopeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA27140F1D5EC1EA001B08B4 /* Build configuration list for PBXNativeTarget "CueLogicShopeeTests" */;
+			buildPhases = (
+				EA2713F41D5EC1EA001B08B4 /* Sources */,
+				EA2713F51D5EC1EA001B08B4 /* Frameworks */,
+				EA2713F61D5EC1EA001B08B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA2713FA1D5EC1EA001B08B4 /* PBXTargetDependency */,
+			);
+			name = CueLogicShopeeTests;
+			productName = CueLogicShopeeTests;
+			productReference = EA2713F81D5EC1EA001B08B4 /* CueLogicShopeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA2714021D5EC1EA001B08B4 /* CueLogicShopeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2714121D5EC1EA001B08B4 /* Build configuration list for PBXNativeTarget "CueLogicShopeeUITests" */;
+			buildPhases = (
+				EA2713FF1D5EC1EA001B08B4 /* Sources */,
+				EA2714001D5EC1EA001B08B4 /* Frameworks */,
+				EA2714011D5EC1EA001B08B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA2714051D5EC1EA001B08B4 /* PBXTargetDependency */,
+			);
+			name = CueLogicShopeeUITests;
+			productName = CueLogicShopeeUITests;
+			productReference = EA2714031D5EC1EA001B08B4 /* CueLogicShopeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA2713DC1D5EC1E9001B08B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Northzone;
+				TargetAttributes = {
+					EA2713E31D5EC1E9001B08B4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EA2713F71D5EC1EA001B08B4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EA2713E31D5EC1E9001B08B4;
+					};
+					EA2714021D5EC1EA001B08B4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EA2713E31D5EC1E9001B08B4;
+					};
+				};
+			};
+			buildConfigurationList = EA2713DF1D5EC1E9001B08B4 /* Build configuration list for PBXProject "CueLogicShopee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA2713DB1D5EC1E9001B08B4;
+			productRefGroup = EA2713E51D5EC1EA001B08B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA2713E31D5EC1E9001B08B4 /* CueLogicShopee */,
+				EA2713F71D5EC1EA001B08B4 /* CueLogicShopeeTests */,
+				EA2714021D5EC1EA001B08B4 /* CueLogicShopeeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA2713E21D5EC1E9001B08B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2714271D5EC332001B08B4 /* Info.plist in Resources */,
+				EA27142F1D5EED60001B08B4 /* LaunchScreen.storyboard in Resources */,
+				EA2714241D5EC332001B08B4 /* Assets.xcassets in Resources */,
+				EA09B7B11D61EBE900E43558 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2713F61D5EC1EA001B08B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2714011D5EC1EA001B08B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA2713E01D5EC1E9001B08B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA88133F1D60CEE300B42FBF /* cartTableViewCell.swift in Sources */,
+				EA25D6391D5F2604000342D3 /* jsonParser.swift in Sources */,
+				EA09B7B41D61EC0300E43558 /* customSplashScreen.swift in Sources */,
+				EA09B7AC1D61D26700E43558 /* internetChecker.swift in Sources */,
+				EA09B7B81D61EC8900E43558 /* AppDelegate.swift in Sources */,
+				EA09B7AE1D61D9A700E43558 /* productDataDownloader.swift in Sources */,
+				EA2714321D5EF496001B08B4 /* constant.swift in Sources */,
+				EA88133B1D60AC8700B42FBF /* productDetailViewCell.swift in Sources */,
+				EA88133D1D60CC9100B42FBF /* cartViewController.swift in Sources */,
+				EA09B7A81D61842900E43558 /* imageDownloader.swift in Sources */,
+				EA25D63B1D5F2663000342D3 /* modelWrapper.swift in Sources */,
+				EA09B7B51D61EC0300E43558 /* intialScreen.swift in Sources */,
+				EA88133A1D60AC8700B42FBF /* productViewController.swift in Sources */,
+				EAFA3CF11D5F032900008A06 /* productData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2713F41D5EC1EA001B08B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2713FD1D5EC1EA001B08B4 /* CueLogicShopeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2713FF1D5EC1EA001B08B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2714081D5EC1EA001B08B4 /* CueLogicShopeeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA2713FA1D5EC1EA001B08B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2713E31D5EC1E9001B08B4 /* CueLogicShopee */;
+			targetProxy = EA2713F91D5EC1EA001B08B4 /* PBXContainerItemProxy */;
+		};
+		EA2714051D5EC1EA001B08B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2713E31D5EC1E9001B08B4 /* CueLogicShopee */;
+			targetProxy = EA2714041D5EC1EA001B08B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA27142D1D5EED60001B08B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA27142E1D5EED60001B08B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA27140A1D5EC1EA001B08B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA27140B1D5EC1EA001B08B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA27140D1D5EC1EA001B08B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CueLogicShopee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuelogic.CueLogicShopee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA27140E1D5EC1EA001B08B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CueLogicShopee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuelogic.CueLogicShopee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA2714101D5EC1EA001B08B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CueLogicShopeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuelogic.CueLogicShopeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CueLogicShopee.app/CueLogicShopee";
+			};
+			name = Debug;
+		};
+		EA2714111D5EC1EA001B08B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CueLogicShopeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuelogic.CueLogicShopeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CueLogicShopee.app/CueLogicShopee";
+			};
+			name = Release;
+		};
+		EA2714131D5EC1EA001B08B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CueLogicShopeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuelogic.CueLogicShopeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CueLogicShopee;
+			};
+			name = Debug;
+		};
+		EA2714141D5EC1EA001B08B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CueLogicShopeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuelogic.CueLogicShopeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CueLogicShopee;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA2713DF1D5EC1E9001B08B4 /* Build configuration list for PBXProject "CueLogicShopee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA27140A1D5EC1EA001B08B4 /* Debug */,
+				EA27140B1D5EC1EA001B08B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA27140C1D5EC1EA001B08B4 /* Build configuration list for PBXNativeTarget "CueLogicShopee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA27140D1D5EC1EA001B08B4 /* Debug */,
+				EA27140E1D5EC1EA001B08B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA27140F1D5EC1EA001B08B4 /* Build configuration list for PBXNativeTarget "CueLogicShopeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2714101D5EC1EA001B08B4 /* Debug */,
+				EA2714111D5EC1EA001B08B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2714121D5EC1EA001B08B4 /* Build configuration list for PBXNativeTarget "CueLogicShopeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2714131D5EC1EA001B08B4 /* Debug */,
+				EA2714141D5EC1EA001B08B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA2713DC1D5EC1E9001B08B4 /* Project object */;
+}
